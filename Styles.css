@@ -97,7 +97,7 @@ width: 150px;
 /* Main Content styles */
 .main-content {
     text-align: center;
-    margin: 200px;
+    margin: 200px auto;
 }
 
 /* Footer styles */
@@ -154,3 +154,19 @@ footer {
 .dropdown:hover .dropdown-content {
     display: block;
 }
+
+@media only screen and (max-width: 768px) {
+    .nav-links {
+        display: none; /* Hide navigation links */
+    }
+    .dropdown {
+        display: block; /* Show dropdown menu on smaller screens */
+    }
+    .search-bar input[type="text"] {
+        width: 50px; /* Adjust search input width */
+    }
+    .search-bar button {
+        padding: 4px; /* Adjust padding for search button */
+    }
+}
+
